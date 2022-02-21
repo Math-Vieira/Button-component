@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="/Assets/css/reset.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+   
+
+    <div class="conteiner">
+
+        <div class="conteiner__types">
+            <button class="default">default</button>
+            <button class="outline">outline</button>
+            <button class="text">text</button>
+            <button class="disabled" disabled>disabled</button>
+        </div>
+
+        <div class="conteiner__DE">
+            
+            <div>
+                <label for="disable">disabled button</label> 
+                <input type="checkbox" name="disable" id="disable"><br>
+            </div>
+            <div>
+                <label for="boxshadow">boxshadow</label>
+                <input type="checkbox" name="boxshadow" id="boxshadow">
+            </div>
+        </div>
+        
+        <div class="conteiner__icons">
+            <div class="left">
+                <p>Add a left icon</p>
+                <div class="icon"><i class="fa figure fa-shopping-cart"></i></div>
+                <div class="icon"><i class="fa figure fa-cloud"></i></div>
+                <div class="icon"><i class="fa figure fa-heart"></i></div>
+                <div class="icon"><i class="fa figure fa-car"></i></div>
+                <div class="icon"><i class="fa figure fa-file"></i></div>
+                <button class="default removeLeft remove">Remove icon</button>      
+            </div>
+            <div class="right">
+                <p>Add a right icon</p>
+                <div class="icon"><i class="fa figure fa-shopping-cart"></i></div>
+                <div class="icon"><i class="fa figure fa-cloud"></i></div>
+                <div class="icon"><i class="fa figure fa-heart"></i></div>
+                <div class="icon"><i class="fa figure fa-car"></i></div>
+                <div class="icon"><i class="fa figure fa-file"></i></div> 
+                <button class="default removeRight remove">Remove icon</button>
+            </div>
+        </div>
+
+        <div class="conteiner__color">   
+            
+            <p>Select a color</p>
+            <div class="colors">  
+                <button class="color1 color"> Default </button>
+                <button class="color2 color"> Primary </button>
+                <button class="color3 color"> Secundary </button>
+                <button class="color4 color"> Danger </button>
+            </div>
+        </div>
+
+        <div class="conteiner__size">
+            <p>Select the size</p>
+            <div class="sizes">
+                <button class="size">Small</button>
+                <button class="size">Medium</button>
+                <button class="size">Large</button>
+            </div>
+        </div>
+
+
+        
+        <div class="conteiner__costumizable">
+            <Button id="button" class="default"><span class="icon-left"></span> text <span class="icon-right"></span></BUtton>
+        </div>
+
+    </div>
+
+    <script src="/Assets/js/save.js"></script>
+</body>
+</html>

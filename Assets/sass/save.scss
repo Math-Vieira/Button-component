@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin defaultSize {
+    min-width: 81px;
+    height: 36px;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+@mixin organize {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 15px;
+    display: block;
+}
+
+body {
+    @include center;
+    min-height: 100vh;
+}
+
+.conteiner {
+    width: 600px;
+    height: 600px;
+    &__types {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__DE {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px 0;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-evenly;
+        .right, .left {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            .icon {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__color {
+        @include organize;
+        padding: 25px 0;
+        flex-direction: column;
+        align-items: center;
+        .colors {
+            padding: 15px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly
+        }
+        .colors button {
+            @include defaultSize;
+        }
+       
+    }
+    &__size {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .sizes {
+            padding: 10px 0;
+            button {
+                @include defaultSize;
+            }
+        }
+    }
+    &__costumizable {
+        @include center;    
+        padding: 25px 0;   
+    }
+
+}
+
+.default{
+    @include defaultSize;
+    border: none;
+    background-color: #E0E0E0;
+
+    &:hover {
+        background-color: #AEAEAE;
+    }
+}
+
+.outline {
+    @include defaultSize;
+    border: 1px solid rgb(61, 90, 254);
+    color: #3D5AFE;
+    background-color: rgba(255, 255, 255, 0);
+
+    &:hover {
+        background-color: hsla(224, 100%, 58%, 0.1);
+    }
+}
+.text {
+    @include defaultSize;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #3D5AFE;
+
+    &:hover {
+        background-color: hsla(224, 100%, 58%, 0.1);
+    }
+}
+
+.disabled {
+    @include defaultSize;
+    border: none;
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+
+    &:hover{
+        background-color: white;
+        cursor: not-allowed;
+    }
+}
+
+.color1 {
+    background-color: #E0E0E0;
+    color: black;
+    &:hover{
+        background-color: #AEAEAE;
+    }
+}
+.color2 {
+    background-color: #2962FF;
+    color: white;
+    &:hover{
+        background-color: #0039CB;
+    }
+}
+.color3 {
+    background-color: #455A64;
+    color: white;
+    &:hover{
+        background-color: #1C313A;
+    }
+}
+.color4 {
+    background-color: #D32F2F;
+    color: white;
+    &:hover{
+        background-color: #9A0007;
+    }
+}
+
+.size1 {
+    @include defaultSize;
+}
+
+.size2 {
+    @include defaultSize;
+    min-width: 99px;
+    height: 44px;
+    font-size: 15,89px;
+}
+
+.size3 {
+    @include defaultSize;
+    min-width: 108px;
+    height: 48px;
+    font-size: 17,33px;
+}
+
+
+
+
+

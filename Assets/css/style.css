@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+p {
+  font-size: 15px;
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.conteiner {
+  width: 600px;
+  height: 600px;
+}
+.conteiner__types {
+  display: flex;
+  justify-content: space-evenly;
+}
+.conteiner__DE {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+.conteiner__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.conteiner__icons .right, .conteiner__icons .left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.conteiner__icons .right .icon, .conteiner__icons .left .icon {
+  cursor: pointer;
+}
+.conteiner__color {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.conteiner__color .colors {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.conteiner__color .colors button {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+.conteiner__size {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteiner__size .sizes {
+  padding: 10px 0;
+}
+.conteiner__size .sizes button {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+.conteiner__costumizable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.default {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: #E0E0E0;
+}
+.default:hover {
+  background-color: #AEAEAE;
+}
+
+.outline {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #3d5afe;
+  color: #3D5AFE;
+  background-color: rgba(255, 255, 255, 0);
+}
+.outline:hover {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.text {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: #3D5AFE;
+}
+.text:hover {
+  background-color: rgba(41, 98, 255, 0.1);
+}
+
+.disabled {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background-color: #E0E0E0;
+  color: #9E9E9E;
+}
+.disabled:hover {
+  background-color: white;
+  cursor: not-allowed;
+}
+
+.color1 {
+  background-color: #E0E0E0;
+  color: black;
+}
+.color1:hover {
+  background-color: #AEAEAE;
+}
+
+.color2 {
+  background-color: #2962FF;
+  color: white;
+}
+.color2:hover {
+  background-color: #0039CB;
+}
+
+.color3 {
+  background-color: #455A64;
+  color: white;
+}
+.color3:hover {
+  background-color: #1C313A;
+}
+
+.color4 {
+  background-color: #D32F2F;
+  color: white;
+}
+.color4:hover {
+  background-color: #9A0007;
+}
+
+.size1 {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.size2 {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 99px;
+  height: 44px;
+  font-size: 15, 89px;
+}
+
+.size3 {
+  min-width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 108px;
+  height: 48px;
+  font-size: 17, 33px;
+}
+
+/*# sourceMappingURL=style.css.map */
